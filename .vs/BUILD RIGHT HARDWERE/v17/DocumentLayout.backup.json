@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\mssql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\mssql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\inputdeclaration.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\inputdeclaration.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\admin form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\admin form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\admin form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\admin form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\mssql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\mssql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\inputdeclaration.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|solutionrelative:build right hardwere\\inputdeclaration.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BCDF11B-09A2-4241-BF91-0A35D90B9ADF}|BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE.vbproj|c:\\users\\administrator\\desktop\\buildrighthardware\\build right hardwere\\build right hardwere\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -46,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "mssql.vb",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\mssql.vb",
               "RelativeDocumentMoniker": "BUILD RIGHT HARDWERE\\mssql.vb",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\mssql.vb",
               "RelativeToolTip": "BUILD RIGHT HARDWERE\\mssql.vb",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAowJAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAUwKEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-09T04:44:17.546Z",
               "IsPinned": true,
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Admin Form.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\Admin Form.vb",
               "RelativeDocumentMoniker": "BUILD RIGHT HARDWERE\\Admin Form.vb",
@@ -80,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Admin Form.vb",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\Admin Form.vb",
               "RelativeDocumentMoniker": "BUILD RIGHT HARDWERE\\Admin Form.vb",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\Admin Form.vb",
               "RelativeToolTip": "BUILD RIGHT HARDWERE\\Admin Form.vb",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAUwEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwF0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-03-14T07:31:34.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "inputdeclaration.vb",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\BuildRightHardware\\BUILD RIGHT HARDWERE\\BUILD RIGHT HARDWERE\\inputdeclaration.vb",
               "RelativeDocumentMoniker": "BUILD RIGHT HARDWERE\\inputdeclaration.vb",
@@ -101,8 +101,7 @@
               "RelativeToolTip": "BUILD RIGHT HARDWERE\\inputdeclaration.vb",
               "ViewState": "AgIAAKsAAAAAAAAAAAD4vx4BAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-11T08:43:13.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T08:43:13.12Z"
             },
             {
               "$type": "Document",
@@ -114,8 +113,7 @@
               "RelativeToolTip": "BUILD RIGHT HARDWERE\\SIGNUP.vb",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-03-10T10:20:45.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T10:20:45.17Z"
             },
             {
               "$type": "Document",

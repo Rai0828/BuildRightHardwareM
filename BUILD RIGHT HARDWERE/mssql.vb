@@ -1,10 +1,17 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Microsoft.Data.SqlClient
+Imports SqlCommand = Microsoft.Data.SqlClient.SqlCommand
 
 Public Class mssql
 
     Public SqlCon As New Microsoft.Data.SqlClient.SqlConnection With {.ConnectionString = "Server=DESKTOP-5PTEBQH\SQLEXPRESS01;Database=BRH_DB;Integrated Security=True;TrustServerCertificate=True;Encrypt=True"}
+
+    Friend ReadOnly Property UpdateDatabase(selectedUser As String, selectedColumn As String, newValue As String) As Object
+        Get
+            Throw New NotImplementedException()
+        End Get
+    End Property
 
     Public Sub queryLogin(txt1 As String, txt2 As String)
         Try
@@ -141,8 +148,28 @@ Public Class mssql
         Return dataTable
     End Function
 
-    Public Sub updateQuery(columnName, newClick, oldclick, panel6)
+    Public Sub updateQuery(selectedUser As String, selectedColumn As String, newValue As String)
 
+        Try
+            Dim query As String = "UPDATE loginTB SET " & selectedColumn & " = @newValue WHERE Username = @userName"
+            Using cmd As New SqlCommand(query, SqlCon)
+                SqlCon.Open()
+                cmd.Parameters.AddWithValue("@newValue", newValue)
+                cmd.Parameters.AddWithValue("@userName", selectedUser)
+
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+
+                If rowsAffected > 0 Then
+                    MessageBox.Show("Update successful!")
+                Else
+                    MessageBox.Show("Update failed!")
+                End If
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SqlCon.Close()
+        End Try
     End Sub
 
 
