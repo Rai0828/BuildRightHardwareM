@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("BUILD RIGHT HARDWERE"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6522fc88fc0a14946d3b02b341230fa631d03517"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("BUILD RIGHT HARDWERE"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("BUILD RIGHT HARDWERE"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

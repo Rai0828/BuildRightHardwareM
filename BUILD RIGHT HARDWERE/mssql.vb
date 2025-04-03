@@ -1,14 +1,15 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports System.Data.SqlClient
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Microsoft.Data.SqlClient
 
 Public Class mssql
 
-    Public SqlCon As New SqlConnection With {.ConnectionString = "Server=DESKTOP-5PTEBQH\SQLEXPRESS01;Database=BRH_DB;Integrated Security=True;TrustServerCertificate=True;Encrypt=True"}
+    Public SqlCon As New Microsoft.Data.SqlClient.SqlConnection With {.ConnectionString = "Server=DESKTOP-5PTEBQH\SQLEXPRESS01;Database=BRH_DB;Integrated Security=True;TrustServerCertificate=True;Encrypt=True"}
 
     Public Sub queryLogin(txt1 As String, txt2 As String)
         Try
             Dim q As String = "SELECT COUNT(*) FROM loginTB WHERE Username = @Username AND Password = @Password"
-            Using cmd As New SqlCommand(q, SqlCon)
+            Using cmd As New Microsoft.Data.SqlClient.SqlCommand(q, SqlCon)
                 SqlCon.Open()
                 cmd.Parameters.AddWithValue("@Username", txt1)
                 cmd.Parameters.AddWithValue("@Password", txt2)
@@ -18,11 +19,11 @@ Public Class mssql
                     MsgBox("INVALID ACCOUNT!!! SIGN UP FIRST")
                 Else
                     Dim q1 As String = "SELECT Role FROM loginTB WHERE Username = @Username AND Password = @Password"
-                    Using cmd1 As New SqlCommand(q1, SqlCon)
+                    Using cmd1 As New Microsoft.Data.SqlClient.SqlCommand(q1, SqlCon)
                         cmd1.Parameters.AddWithValue("@Username", txt1)
                         cmd1.Parameters.AddWithValue("@Password", txt2)
 
-                        Using dr As SqlDataReader = cmd1.ExecuteReader()
+                        Using dr As Microsoft.Data.SqlClient.SqlDataReader = cmd1.ExecuteReader()
                             If dr.Read() Then  ' Move to the first row
                                 Dim userRole As String = dr("Role").ToString() ' Get the role value
 
@@ -65,7 +66,7 @@ Public Class mssql
             Dim adminExists As Boolean = False
             Dim q1 As String = "SELECT COUNT(*) FROM loginTB WHERE Role = 'Admin'"
 
-            Using cmd As New SqlCommand(q1, SqlCon)
+            Using cmd As New Microsoft.Data.SqlClient.SqlCommand(q1, SqlCon)
                 Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                 adminExists = (count > 0) ' If count > 0, an admin already exists
             End Using
@@ -84,7 +85,7 @@ Public Class mssql
 
             ' Insert new account
             Dim q2 As String = "INSERT INTO loginTB (Username, Password, Role) VALUES (@Username, @Password, @Role)"
-            Using cmd1 As New SqlCommand(q2, SqlCon)
+            Using cmd1 As New Microsoft.Data.SqlClient.SqlCommand(q2, SqlCon)
                 cmd1.Parameters.AddWithValue("@Username", txt1)
                 cmd1.Parameters.AddWithValue("@Password", txt2)
                 cmd1.Parameters.AddWithValue("@Role", txt4) ' Allow user to choose Staff/Customer/Admin
@@ -102,8 +103,8 @@ Public Class mssql
 
     Public Sub loadingTable(DataGridView1 As DataGridView) ' Pass the DataGridView as a parameter
         Dim q As String = "SELECT TABLE_NAME AS TABLES FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'" 'Added where clause
-        Dim cmd As New SqlCommand(q, SqlCon)
-        Dim da As New SqlDataAdapter(cmd) ' Use SqlDataAdapter
+        Dim cmd As New Microsoft.Data.SqlClient.SqlCommand(q, SqlCon)
+        Dim da As New Microsoft.Data.SqlClient.SqlDataAdapter(cmd) ' Use SqlDataAdapter
         Dim dt As New DataTable() ' Create a DataTable
 
         Try
@@ -126,7 +127,7 @@ Public Class mssql
         Try
             SqlCon.Open()
             Dim query As String = "SELECT * FROM [" & tableName & "]"
-            Using adapter As New SqlDataAdapter(query, SqlCon)
+            Using adapter As New Microsoft.Data.SqlClient.SqlDataAdapter(query, SqlCon)
                 adapter.Fill(dataTable)
             End Using
         Catch ex As Exception
@@ -139,6 +140,14 @@ Public Class mssql
 
         Return dataTable
     End Function
+
+    Public Sub updateQuery(columnName, newClick, oldclick, panel6)
+
+    End Sub
+
+
+
+
 
 
 End Class

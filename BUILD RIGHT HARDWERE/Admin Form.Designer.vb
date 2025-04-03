@@ -31,6 +31,10 @@ Partial Class Admin_Form
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
         Panel5 = New Panel()
+        Panel6 = New Panel()
+        ButtonUpdate = New Button()
+        TextBoxUpdate = New TextBox()
+        DataGridView2 = New DataGridView()
         Button5 = New Button()
         Button4 = New Button()
         Button3 = New Button()
@@ -50,6 +54,8 @@ Partial Class Admin_Form
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         Panel5.SuspendLayout()
+        Panel6.SuspendLayout()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         Panel4.SuspendLayout()
         SuspendLayout()
@@ -145,6 +151,8 @@ Partial Class Admin_Form
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(69), CByte(130), CByte(180))
+        Panel5.Controls.Add(Panel6)
+        Panel5.Controls.Add(DataGridView2)
         Panel5.Controls.Add(Button5)
         Panel5.Controls.Add(Button4)
         Panel5.Controls.Add(Button3)
@@ -155,6 +163,43 @@ Partial Class Admin_Form
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(614, 270)
         Panel5.TabIndex = 2
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Panel6.Controls.Add(ButtonUpdate)
+        Panel6.Controls.Add(TextBoxUpdate)
+        Panel6.Location = New Point(252, 3)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(199, 231)
+        Panel6.TabIndex = 11
+        ' 
+        ' ButtonUpdate
+        ' 
+        ButtonUpdate.BackColor = Color.Silver
+        ButtonUpdate.Font = New Font("Sitka Banner Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ButtonUpdate.Location = New Point(60, 101)
+        ButtonUpdate.Name = "ButtonUpdate"
+        ButtonUpdate.Size = New Size(78, 29)
+        ButtonUpdate.TabIndex = 15
+        ButtonUpdate.Text = "UPDATE"
+        ButtonUpdate.UseVisualStyleBackColor = False
+        ' 
+        ' TextBoxUpdate
+        ' 
+        TextBoxUpdate.Location = New Point(42, 37)
+        TextBoxUpdate.Name = "TextBoxUpdate"
+        TextBoxUpdate.Size = New Size(114, 23)
+        TextBoxUpdate.TabIndex = 0
+        ' 
+        ' DataGridView2
+        ' 
+        DataGridView2.BackgroundColor = Color.Silver
+        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView2.Location = New Point(118, 34)
+        DataGridView2.Name = "DataGridView2"
+        DataGridView2.Size = New Size(481, 222)
+        DataGridView2.TabIndex = 17
         ' 
         ' Button5
         ' 
@@ -314,6 +359,9 @@ Partial Class Admin_Form
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel5.ResumeLayout(False)
+        Panel6.ResumeLayout(False)
+        Panel6.PerformLayout()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
@@ -343,4 +391,8 @@ Partial Class Admin_Form
     Friend WithEvents Button6 As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents TextBoxUpdate As TextBox
+    Friend WithEvents ButtonUpdate As Button
 End Class
